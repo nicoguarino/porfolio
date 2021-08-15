@@ -11,16 +11,16 @@
 
 ## About <a name = "about"></a>
 
-Nico Guarino's Portfolio website is designed to display current and future work. It has a simplistic layout that originally was created to look after a newspaper. 
+Nico Guarino's Portfolio website is designed to display current and future work. It has a simplistic layout that originally was created to look after a newspaper. It gives a brief background on the creator and provides contact information to best reach him.
 
 ## Getting Started <a name = "getting-started"></a>
 
 * [Git Hub Pull](https://github.com/nicoguarino/portfolio.git)
-* [Horiseon Website URL](https://nicoguarino.github.io/portfolio/)
+* [Nico Guarino Portfolio Website URL](https://nicoguarino.github.io/portfolio/)
 
 ## Code Sample <a name = "code-sample"></a>
 
-![Sample Code](https://github.com/nicoguarino/horiseonchallenge/blob/main/assets/images/sample_code.png?raw=true "Sample Code")
+![Sample Code](https://github.com/nicoguarino/portfolio/blob/main/assests/images/sample_code.png?raw=true "Sample Code")
 
 ### Sample Code
 ```HTML Sample
