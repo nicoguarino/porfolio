@@ -1,0 +1,330 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+:root {
+    --primaryBg: #f3eee2fd;
+    --headerColor: rgb(90, 18, 18);
+    --headerSecondary:rgba(66, 66, 66, 0.667);
+    --imageDim: #242424;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--primaryBg);
+}
+
+/* Header Section Start */
+header  {
+    padding: 20px;
+    background-color:var(--primaryBg);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header h1 {
+    display:inline-flex;
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+    color: rgb(90, 18, 18);
+    float: left;
+    width: 50%;
+    border-right: 2px solid var(--headerSecondary);
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+header nav ul {
+    color: var(--headerSecondary);
+    display: flex;
+    align-items: flex-end;
+    flex-wrap:wrap;
+    list-style: none;
+    padding: 35px;
+    padding-left: 120px;
+    justify-content: space-around;
+
+    
+}
+
+header a {
+    text-decoration: none;
+    color: var(--headerSecondary);
+    font-size: 32px;
+    padding: 20px 40px;
+    
+}
+
+header nav ul li a:hover {
+    background: var(--headerColor);
+    color: var(--primaryBg);
+    text-shadow: none;
+}
+
+/* About Me Section Start */
+
+.about-me {
+    float: left;
+    margin: 37px;
+    text-align: center;
+    display: inline-flex;
+
+    
+}
+
+.about-me h2 {
+    font-style: italic;
+    font-size: 25px;
+    color: var(--headerColor);
+
+}
+.about-me img {
+    border-left: 2px solid var(--headerSecondary);
+    float: left;
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+}
+
+.about-me p {
+    margin: 20px;
+    line-height: 2;
+    color: var(--headerSecondary);
+    text-align: justify;   
+}
+
+.tab {
+  margin: 32px;
+}
+
+/* Portfolio Section Starts */
+.work-portfolio {
+    display: inline-flex;
+}
+.work-portfolio h2 {
+    font-style: italic;
+    font-size: 25px;
+    color: var(--headerColor);
+}
+
+.flexBox {
+    border-left: 2px solid var(--headerSecondary);
+    padding: 40px;
+    margin: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.flexItems {
+
+    margin-left: 0;
+}
+
+
+.firstPortImage {
+    height: 400px;
+    width: 807px;
+    border: solid 4px var(--headerColor);
+    background-color: var(--imageDim);
+    opacity: .7;
+    position: relative;
+}
+
+.otherPortImages {
+    height: 200px;
+    width: 400px;
+    border: solid 4px var(--headerColor);
+    background-color: var(--imageDim);
+    opacity: .7;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.firstPortImage:hover, .otherPortImages:hover {
+    opacity: initial;
+    
+}
+   
+/* Footer Section Start */
+
+.contact-me {
+    text-align: center;
+    align-items: flex-end;
+    padding: auto;
+    margin-bottom: 40px;
+
+}
+
+.contact-me ul {
+    color: var(--headerSecondary);
+    display: flex;
+    align-items: flex-end;
+    flex-wrap:wrap;
+    list-style: none;
+    padding: 35px;
+    padding-left: 120px;
+    justify-content: space-around;
+
+    
+}
+
+footer menu ul li a:hover {
+    background: none;
+    color: var(--headerColor);
+    text-shadow: none;
+}
+
+.contact-me a {
+    display: inline-flex;
+    color: var(--headerSecondary);
+    flex-wrap:wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    text-decoration: none;
+
+}
+
+footer p {
+    font-size: 20px;
+    color: var(--headerColor);
+    text-decoration: underline;
+}
+
+/* Media Inquries for Smaller Desktop SCREENS and Phones */
+
+
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0;
+        justify-content: center;
+        position: relative; 
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        padding-top: 20px;
+        font-size: 35px;
+        border: none;
+    }
+
+    header nav ul a {
+        padding: 0;
+        margin: 10px;
+        font-size: 18px;
+        justify-content: center;
+        border: none;
+    }
+
+    /* About me Resize */
+
+    .about-me {
+        flex-flow: wrap;
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .about-me h2 {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .about-me img {
+        border: none;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .about-me p {
+        flex-flow: wrap;
+        font-size: 12px;
+        margin: 0;
+        justify-content: center;
+        width: 50%;
+        
+    }
+    .about-me h2 {
+        align-items: center;
+    }
+
+    /* Portfolio resize */
+
+    .work-portfolio {
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        display: inline-flex;
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .flexBox {
+        width: 100%;
+        position: relative;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        border: none;
+        margin: auto;
+    }
+
+    .firstPortImage {
+        align-items: center;
+        align-self: center;
+        justify-content: space-around;
+        height: 20%;
+        width: 40%;
+    }
+
+    .otherPortImages {
+        height: 10%;
+        width: 20%;
+    }
+
+    /* Contact Resize */
+
+    .contact-me ul {
+        justify-content:space-between;
+        align-items: center;
+        padding: 0;
+        width: 50%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
